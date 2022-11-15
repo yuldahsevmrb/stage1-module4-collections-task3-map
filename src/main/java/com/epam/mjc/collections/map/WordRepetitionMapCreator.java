@@ -23,9 +23,4 @@ public class WordRepetitionMapCreator {
         }
         return wordRepetition;
     }
-
-    public static void main(String[] args) {
-        WordRepetitionMapCreator wordRepetitionMapCreator = new WordRepetitionMapCreator();
-        wordRepetitionMapCreator.createWordRepetitionMap("hello word in lOwEr cAsE, HELLO WORD in UpPeR CaSe.");
-    }
 }

@@ -12,7 +12,9 @@ public class KeyValueSwapper {
         Map<String, Integer> swaped = new HashMap<>();
 
         for (int i = 0; i < sourceMap.size(); i++) {
-            swaped.put(values.get(i), keys.get(i));
+            if(!swaped.containsValue(values.get(i))) {
+                swaped.put(values.get(i), keys.get(i));
+            }
         }
 
         return swaped;
